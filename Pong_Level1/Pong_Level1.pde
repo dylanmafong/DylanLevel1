@@ -26,9 +26,13 @@ rect(mouseX, 900, 50,15);
   if (Y < 0) {
     Yspeed=9;
   }
-  if (intersects(X,)){
+  if (intersects(X,Y,mouseX,900, 50)){
+      Yspeed=-9;
 }
-
+}
+int paddleX =100;
+int paddleY =900;
+int paddleLength = 500;
 int  X =  900;
 int  Y =  400;
 int Yspeed = 9;
